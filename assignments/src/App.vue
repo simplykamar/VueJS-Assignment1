@@ -1,9 +1,7 @@
-<template>
-  <h1>Hello Deepak Sir.</h1>
-</template>
+<script setup>
+    import Test from './components/Test.vue'
+</script>
 
-<style scoped>
-  h1{
-      text-align: center;
-  }
-</style>
+<template>
+    <Test/>
+</template>
