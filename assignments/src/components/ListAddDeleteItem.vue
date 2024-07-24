@@ -12,15 +12,13 @@
             }
     }
     function deleteList(itemIndex){
-        if (listItems.value.length >= itemIndex){
             listItems.value.splice(itemIndex,1)
-        }
     }
 </script>
 <template>
     <main>
         <h1>Add Item</h1>
-        <input v-on:input="event=>itemValue=event.target.value" v-bind:value="itemValue"/>
+        <input v-model="itemValue" />
         <button v-on:click="addItem">Add Item</button>
         <ul v-if="listItems.length > 0">
             <li v-for="(item,index) in listItems" v-bind:key="item">

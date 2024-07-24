@@ -1,7 +1,7 @@
 <script setup>
-    import Test from './components/Test.vue'
+    import ListAddDeleteItem from './components/ListAddDeleteItem.vue'
 </script>
 
 <template>
-    <Test/>
+    <ListAddDeleteItem/>
 </template>
