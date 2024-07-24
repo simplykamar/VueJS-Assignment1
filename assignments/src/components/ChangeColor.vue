@@ -10,11 +10,11 @@
     ]
 </script>
 <template>
-    <h1 v-bind:style="{'color':activeColor}">Hello Deepak Sir.</h1>
+    <h1 :style="{'color':activeColor}">Hello Deepak Sir.</h1>
     <p>Selected color is <span v-bind:style="{'color':activeColor}">{{ activeColor.toUpperCase() }}</span></p>
     <select v-model="activeColor">
         <option value="" disabled>Select your color</option>
-        <option v-for="c in colors">{{ c }}</option>
+        <option v-for="color in colors">{{ color }}</option>
     </select>
 </template>
 

@@ -1,7 +1,7 @@
 <script setup>
-    import Test from './components/Test.vue'
+    import ChangeColor from './components/ChangeColor.vue'
 </script>
 
 <template>
-    <Test/>
+    <ChangeColor/>
 </template>
