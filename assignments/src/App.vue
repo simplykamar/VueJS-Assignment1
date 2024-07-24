@@ -1,7 +1,7 @@
 <script setup>
-    import Test from './components/Test.vue'
+    import MainComponent from './components/MainComponent.vue'
 </script>
 
 <template>
-    <Test/>
+    <MainComponent/>
 </template>

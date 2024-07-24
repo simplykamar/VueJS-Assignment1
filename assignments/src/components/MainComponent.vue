@@ -15,10 +15,10 @@
 <template>
     <main>
         <h1>Hello Vue My name is: {{ name }}</h1>
-        <input v-bind:value="name" v-on:input="event=>name=event.target.value"/>
+        <input :value="name" v-model="name"/>
         <div>
-            <button v-on:click="clear">Clear</button>
-            <button v-on:click="toUppercase">UppperCase</button>
+            <button @click="clear">Clear</button>
+            <button @click="toUppercase">UppperCase</button>
         </div>
     </main>
 </template>
