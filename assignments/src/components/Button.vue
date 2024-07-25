@@ -12,7 +12,7 @@
         }
         
     })
-
+    
 </script>
 <template>
     <div class="button-container">
