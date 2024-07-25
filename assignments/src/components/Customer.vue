@@ -1,7 +1,7 @@
 <script setup>
     import {ref} from 'vue'
 
-    const customerData = ref([])//[{id:1,firstName:"kamar",lastName:"alam",address:"address"},{},{}]
+    const customersData = ref([])//[{id:1,firstName:"kamar",lastName:"alam",address:"address"},{},{}]
     const formInput = ref({
         id:null,
         firstName:'',
@@ -12,7 +12,7 @@
 
     function addItem() {
         formInput.value.id = generateId.value
-        customerData.value.push(formInput.value)
+        customersData.value.push(formInput.value)
         formInput.value = {
             id:null,
             firstName:'',
@@ -23,7 +23,7 @@
     }
     function deleteItem(id) {
         console.log(id)
-        customerData.value = customerData.value.filter((item)=>item.id!==id)
+        customersData.value = customersData.value.filter((item)=>item.id!==id)
     }
 </script>
 
@@ -41,7 +41,7 @@
         </div>
         <div>
             <table>
-                <tr v-for="data in customerData">
+                <tr v-for="data in customersData">
                     <td>{{data.firstName}}</td>
                     <td>{{data.lastName}}</td>
                     <td>{{data.address}}</td>
